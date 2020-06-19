@@ -4,7 +4,6 @@ import wikipedia
 
 def lambda_handler(event, context):
 
-        
     if 'entity' in event:
         entity = event['entity']
         
@@ -20,9 +19,7 @@ def lambda_handler(event, context):
         }
     else:
         response = {
-            "statusCode": "400",
-            "body": []
+            "statusCode": "400"
         }
-
 
     return response
